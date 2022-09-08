@@ -1,6 +1,7 @@
 import react from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
+import CartWidget from './CartWidget'
 function Navbar(){
     return(
         <>
@@ -12,6 +13,7 @@ function Navbar(){
                     <a href="/">about</a>
                     <a href="/">contact</a>
                     <a href="/">blog</a>
+                    <a href="/"><CartWidget/></a>
                 </div>
                 <div className="burguer">
                     <BurguerButton/>
@@ -22,7 +24,7 @@ function Navbar(){
     )
 }
 
-export default Navbar
+
 const NavContainer = styled.nav `
     h2{
         color: white;
@@ -49,9 +51,9 @@ const NavContainer = styled.nav `
     .links{
         position:aboslute;
         top: -700px;
-        left:-2000px
-        margin-left: auto;
+        left:-2000px;
         margin-right: auto;
+        margin-left: auto;
         text-align: center;
         @media( min-width: 400px){
             display:none;
@@ -61,14 +63,14 @@ const NavContainer = styled.nav `
         width: 100%;
         display: block;
         position: absolute;
-        margin-left= auto;
-        margin-right= auto;
-        top=30%;
-        left=0;
-        right=0;
-        text-align=center;
+        margin-left: auto;
+        margin-right: auto;
+        top:30%;
+        left:0;
+        right:0;
+        text-align:center;
         a{
-            color=#333;
+            color:#333;
 
         }
 
@@ -76,6 +78,6 @@ const NavContainer = styled.nav `
     }
 `
 
-
+export default Navbar
 
  
