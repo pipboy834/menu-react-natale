@@ -2,7 +2,7 @@ import react from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
 import CartWidget from './CartWidget'
-function Navbar(){
+function NavBar(){
     return(
         <>
             <NavContainer>
@@ -78,6 +78,4 @@ const NavContainer = styled.nav `
     }
 `
 
-export default Navbar
-
- 
+export default NavBar;
