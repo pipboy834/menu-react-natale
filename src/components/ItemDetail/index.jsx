@@ -13,4 +13,4 @@ import "../ItemDetail/ItemDetail.css"
     );
  }
 
- export default ItemDetail; 
+ export default ItemDetail

@@ -14,10 +14,10 @@ export const ItemListContainer =({texto}) => {
    useEffect(()=> {
       const getData = new Promise(resolve=>{
          setTimeout(()=>{
-            resolve(imagenes);
-         }, 2000);
+            resolve(imagenes)
+         }, 2000)
       });
-      getData.then(res => setData(res));
+      getData.then(res => setData(res))
    }, [])
 
    

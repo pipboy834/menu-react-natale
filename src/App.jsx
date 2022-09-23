@@ -10,7 +10,7 @@ function App() {
       <NavBar/>
       <ItemDetailContainer/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
