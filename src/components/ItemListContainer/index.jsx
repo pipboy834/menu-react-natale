@@ -27,8 +27,8 @@ export const ItemListContainer =({texto}) => {
    }
    return(
       <>
-         <Title greeting="usuario"/>
-         <ItemCount initial={1} stock={5} onAdd={onAdd} />
+
+        
          <ItemList data={data}/>
       </>
    )
