@@ -2,13 +2,15 @@ import react from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
 import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom';
+
 function NavBar(){
     return(
         <>
             <NavContainer>
                 <h2> Navbar <span>responsive</span></h2>
                 <div className="links, active">
-                    <a href="/">home</a>
+                    <Link to='/about'>home</Link>
                     <a href="/">shop</a>   
                     <a href="/">about</a>
                     <a href="/">contact</a>
