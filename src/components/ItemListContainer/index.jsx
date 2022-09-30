@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Title from "../Title";
-import ItemCount from "../ItemCount";
+
 import ItemList from "../ItemList";
 
 const imagenes =[
@@ -21,10 +21,7 @@ export const ItemListContainer =({texto}) => {
    }, [])
 
    
-   const onAdd = (quantity) =>{
-      console.log(`compraste ${quantity} unidades`)
-
-   }
+  
    return(
       <>
 

@@ -10,9 +10,9 @@ function NavBar(){
             <NavContainer>
                 <h2> Navbar <span>responsive</span></h2>
                 <div className="links, active">
-                    <Link to='/about'>home</Link>
+                    <Link to='/'>home</Link>
                     <a href="/">shop</a>   
-                    <a href="/">about</a>
+                    <a href="/about">about</a>
                     <a href="/">contact</a>
                     <a href="/">blog</a>
                     <a href="/"><CartWidget/></a>
