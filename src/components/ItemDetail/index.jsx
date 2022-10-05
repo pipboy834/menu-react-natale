@@ -3,13 +3,17 @@ import "../ItemDetail/ItemDetail.css"
 import ItemCount from "../ItemCount"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
 
 
- export const ItemDetail =({data}) =>{
+export const ItemDetail =({data}) =>{
     const [GoToCart, SetGoToCart] =useState(false)
+    const {addProduct} = useCartContext()
+
 
     const onAdd = (quantity) =>{
         SetGoToCart(true)
+        addProduct (data, quantity )
   
      }
     return(
@@ -27,6 +31,6 @@ import { Link } from "react-router-dom";
             </div>
         </div>
     );
- }
+}
 
- export default ItemDetail
+export default ItemDetail

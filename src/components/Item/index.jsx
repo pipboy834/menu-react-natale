@@ -1,8 +1,12 @@
 import "../Item/Item.css"
 import swal from 'sweetalert';
 import React from 'react';
+import { Link } from "react-router-dom";
+
+import { useContext } from "react";
 
 const Item = ({info})=> {
+
 
          return(
             <a href='' className='film'>
